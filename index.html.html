@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<script>
+    function showMessage() {
+        alert("Thank you for visiting my website!");
+    }
+</script>
+<html>
+<head>
+   <title>My Portfolio</title>
+    <style>nav {
+    background-color: black;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 20px;
+    font-size: 18px;
+}
+nav a:hover {
+    text-decoration: underline;
+}
+        body {
+            font-family: Arial, sans-serif;
+            margin: 40px;
+            background-color: #f2f2f2;
+        }
+
+        h1 {
+            color: blue;
+        }
+
+        h2 {
+            color: green;
+        }
+.about {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+@media (max-width: 600px) {
+    body {
+        margin: 15px;
+    }
+
+    nav a {
+        display: block;
+        margin: 10px;
+    }
+
+    .skills {
+        flex-direction: column;
+    }
+}
+.skills {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+.skill {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.contact {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+}
+.project {
+    background-color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 10px;
+    border: 1px solid #ddd;
+}footer {
+    text-align: center;
+    margin-top: 40px;
+    padding: 20px;
+    background-color: black;
+    color: white;
+}
+        p {
+            font-size: 18px;
+        }
+.intro {
+    font-size: 22px;
+    font-weight: bold;
+}
+        li {
+            margin: 8px;
+        }
+.contact-btn {
+    background-color: blue;
+    color: white;
+    padding: 12px 25px;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.contact-btn:hover {
+    background-color: darkblue;
+}
+</style>
+</head>
+
+<body>
+<nav>
+    <a href="#">Home</a>
+    <a href="#">About Me</a>
+    <a href="#">Skills</a>
+    <a href="#">Contact</a>
+</nav>
+
+<h1>Hi, I'm Wesenu</h1>
+
+<p class="intro">
+    Front-End Developer in Training
+</p>
+<div class="about">
+    <h2>About Me</h2>
+<p>
+I am learning front-end web development.
+I enjoy creating simple, responsive and user-friendly websites.
+</p>
+</div>
+    <p>Hello! My name is Wesenu. I am learning web development.</p>
+    <button class="contact-btn" onclick="showMessage()">Contact Me</button>
+<div class="contact">
+    <h2>Contact Me</h2>
+    <p>Email: your-email@example.com</p>
+    <p>Phone: Your phone number</p>
+</div>
+<h2>My Projects</h2>
+
+<div class="project">
+    <h3>My First Portfolio Website</h3>
+    <p>
+        An Arduino-based project designed to automatically cut
+        grass and small plants using a motor and cutting mechanism.
+    </p>
+</div>
+
+    <h2>My Skills</h2>
+<div class="skills">
+    <div class="skill">HTML</div>
+
+    <div class="skill">Microsoft Word</div>
+
+    <div class="skill">Excel</div>
+
+    <div class="skill">Basic Web Development</div>
+</div>
+</body>
+<footer>
+    <p>© 2026 Wesenu - My Portfolio</p>
+</footer>
+</html>
