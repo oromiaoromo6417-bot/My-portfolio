@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Wesenu Geremu | Front-End Developer</title>
 
     <style>
@@ -10,86 +11,141 @@
             margin: 0;
             padding: 0;
             box-sizing: border-box;
+            scroll-behavior: smooth;
         }
 
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
-            background: #f4f4f4;
+            background: #f4f7fb;
             color: #333;
         }
 
+        /* Header */
         header {
-            background: #222;
+            background: linear-gradient(135deg, #0066ff, #00b4d8);
             color: white;
             text-align: center;
-            padding: 60px 20px;
+            padding: 90px 20px;
         }
 
         header h1 {
-            font-size: 42px;
+            font-size: 48px;
             margin-bottom: 10px;
         }
 
         header p {
             font-size: 20px;
+            margin: 5px;
         }
 
+        /* Navigation */
         nav {
-            background: #333;
+            background: #ffffff;
             text-align: center;
-            padding: 15px;
+            padding: 18px;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
         }
 
         nav a {
-            color: white;
+            color: #0066ff;
             text-decoration: none;
+            font-weight: bold;
             margin: 0 15px;
         }
 
         nav a:hover {
-            color: #00aaff;
+            color: #00b4d8;
         }
 
+        /* Sections */
         section {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 30px;
+            max-width: 950px;
+            margin: 45px auto;
+            padding: 40px;
             background: white;
-            border-radius: 10px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
         }
 
         section h2 {
+            color: #0066ff;
+            font-size: 30px;
             margin-bottom: 20px;
-            color: #222;
+            border-left: 5px solid #00b4d8;
+            padding-left: 12px;
         }
 
+        /* Skills */
         ul {
-            margin-left: 20px;
+            list-style: none;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
         }
 
+        ul li {
+            background: #e8f2ff;
+            color: #0066ff;
+            padding: 10px 18px;
+            border-radius: 25px;
+            font-weight: bold;
+        }
+
+        /* Project */
         .project {
-            background: #f4f4f4;
-            padding: 20px;
-            border-radius: 8px;
-        }
-
-        footer {
-            text-align: center;
-            background: #222;
-            color: white;
+            background: linear-gradient(135deg, #eef7ff, #e8fbff);
             padding: 25px;
-            margin-top: 40px;
+            border-radius: 12px;
+            border-left: 5px solid #0066ff;
         }
 
+        .project h3 {
+            color: #0066ff;
+            margin-bottom: 10px;
+            font-size: 24px;
+        }
+
+        /* Contact */
+        #contact {
+            text-align: center;
+        }
+
+        /* Footer */
+        footer {
+            background: #111827;
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 50px;
+        }
+
+        /* Mobile */
         @media (max-width: 600px) {
+
+            header {
+                padding: 70px 15px;
+            }
+
             header h1 {
-                font-size: 32px;
+                font-size: 34px;
             }
 
             nav a {
-                display: block;
-                margin: 8px;
+                display: inline-block;
+                margin: 7px;
+            }
+
+            section {
+                margin: 25px 15px;
+                padding: 25px;
+            }
+
+            section h2 {
+                font-size: 25px;
             }
         }
     </style>
@@ -113,6 +169,7 @@
 
     <section id="about">
         <h2>About Me</h2>
+
         <p>
             I am an aspiring Front-End Developer with a background in
             Electrical and Computer Engineering. I enjoy creating responsive,
@@ -122,51 +179,73 @@
     </section>
 
     <section id="skills">
-        <h2>Skills</h2>
+        <h2>My Skills</h2>
+
         <ul>
             <li>HTML</li>
             <li>CSS</li>
             <li>JavaScript</li>
-            <li>Basic Front-End Development</li>
+            <li>Front-End Development</li>
             <li>Microsoft Word</li>
             <li>Communication</li>
-            <li>Writing and Editing</li>
-            <li>Arduino and Hardware Systems</li>
+            <li>Writing & Editing</li>
+            <li>Arduino</li>
+            <li>Hardware Systems</li>
             <li>Problem Solving</li>
         </ul>
     </section>
 
     <section id="education">
         <h2>Education</h2>
+
         <p>
-            Electrical and Computer Engineering
+            <strong>Electrical and Computer Engineering</strong>
+        </p>
+
+        <p>
+            My engineering background has helped me develop
+            problem-solving and technical skills.
         </p>
     </section>
 
     <section id="projects">
-        <h2>Projects</h2>
+        <h2>My Project</h2>
 
         <div class="project">
             <h3>Automatic Grass Cutter</h3>
+
             <p>
-                An Arduino Uno based project designed to cut grass and small
-                plants. I worked on the cutting mechanism design and
+                An Arduino Uno based project designed to cut grass
+                and small plants.
+            </p>
+
+            <br>
+
+            <p>
+                I worked on the cutting mechanism design and
                 integration of the electronic components.
             </p>
-            <p><strong>Technologies:</strong> Arduino Uno, Servo Motor, Blade System</p>
+
+            <br>
+
+            <p>
+                <strong>Technologies:</strong>
+                Arduino Uno, Servo Motor, Blade System
+            </p>
         </div>
     </section>
 
     <section id="contact">
-        <h2>Contact</h2>
+        <h2>Contact Me</h2>
+
         <p>
-            I am interested in opportunities to grow as a professional
-            software developer and front-end developer.
+            I am interested in opportunities to grow as a
+            professional software developer and front-end developer.
         </p>
     </section>
 
     <footer>
-        <p>© 2026 Wesenu Geremu. All rights reserved.</p>
+        <p>© 2026 Wesenu Geremu | My Portfolio</p>
     </footer>
 
 </body>
